@@ -14,3 +14,4 @@ Asynchronous web app that uses Web API and user data to dynamically update the U
     "node-fetch"
     "express"
 ```
+##### It was made by Dio Papadopoulos as part of a Udacity's front end developer course.
