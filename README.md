@@ -10,7 +10,7 @@ Asynchronous web app that uses Web API and user data to dynamically update the U
 #### To run this you need to install:
 
 ```
-    "cors": "^2.8.5",
-    "node-fetch": "^2.0.0",
-    "express": "^4.17.1",
+    "cors"
+    "node-fetch"
+    "express"
 ```
