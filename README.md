@@ -23,4 +23,4 @@ To start type on your console:
 ```
 node server.js
 ```
-##### #### It was made by [Dio Papadopoulos](https://dio-papa-portfolio-site.herokuapp.com/travellingWeatherApp) as part of the Udacity's "Front End Developer Course".
+#### It was made by [Dio Papadopoulos](https://dio-papa-portfolio-site.herokuapp.com/travellingWeatherApp) as part of the Udacity's "Front End Developer Course".
