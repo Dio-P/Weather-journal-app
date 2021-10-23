@@ -144,7 +144,7 @@ body {
         
     }
 
-    footer{
+    /* footer{
         text-align: center;
         align-content: center;
         margin-top: 35px;
@@ -164,10 +164,10 @@ body {
 
     .footerBox p{
         margin: 10px;
-    }
+    } */
 };
 
-@media (min-width:795px) {
+@media (min-width:795px) { */
 
     input {
         padding: 5px 20px;

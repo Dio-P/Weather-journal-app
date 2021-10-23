@@ -1,31 +1,43 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
 @media (max-width: 399px) {
     .cardBoardSingl {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        position: relative;
+        min-height: 100vh;
    }
+
     #weatheJournInputBox {
         margin-top: -30px;
         display: grid;
         grid-area: 1/1/3/2;
    }
+
     #weatheJournInputBox #inputBoxTitle {
         margin-top: 20px;
         font-size: 30px;
         color: #b80c4d;
         font-weight: bold;
    }
+
     #weatheJournInputBox #holderCountryCode {
         display: flex;
         flex-direction: column;
         margin: auto;
-        grid-area: 4/1/6/2;
+        grid-area: 2/1/4/2;
    }
+
     #weatheJournInputBox #holderCountryCode #countryCodeTitle {
         font-size: 20px;
         margin-top: -5px;
         margin-bottom: 10px;
    }
+
     #weatheJournInputBox #holderCountryCode #countryCode {
         color: gray;
         border-radius: 40px;
@@ -33,38 +45,47 @@
         text-align: center;
         margin: auto;
    }
+
     #weatheJournInputBox #holderZip {
         display: flex;
         flex-direction: column;
         margin: auto;
         grid-area: 8/1/9/2;
    }
+
     #weatheJournInputBox #holderZip #zipTitle {
         font-size: 20px;
+        margin: 0;
    }
+
     #weatheJournInputBox #holderZip #zipInpBox {
         color: gray;
         border-radius: 40px;
         width: 200px;
         text-align: center;
    }
+
     #holderFeelings {
         grid-area: 3/1/5/2;
    }
+
     #holderFeelings #feelingsTitle {
         font-size: 20px;
         margin-top: 5px;
    }
+
     #holderFeelings #feelings {
         grid-area: 3/1/7/2;
         width: 100%;
         height: 100%;
         text-align: center;
    }
+
     #holderFeelings .myInput {
         color: gray;
         border-radius: 40px;
    }
+
     #holderFeelings #generateBtn {
         width: 160px;
         height: 30px;
@@ -75,17 +96,21 @@
         background-color: blanchedalmond;
         align-content: center;
    }
+
     #holderFeelings #generateBtn:hover {
         background-color: yellow;
    }
+
     #holderEntryBox {
         grid-area: 5/1/7/2;
         font-size: 21px;
         margin-top: 30px;
    }
+
     #holderEntryBox #holderEntryBoxTitle {
         margin-top: 5px;
    }
+
     #holderEntryBox #uiEntryHolder {
         display: flex;
         flex-direction: column;
@@ -95,91 +120,163 @@
         font-size: 20px;
         margin-left: 15px;
    }
+
     #holderEntryBox #uiEntryHolder #date {
         font-size: 20px;
         color: #b80c4d;
         margin: 4px;
    }
+
     #holderEntryBox #uiEntryHolder #temp {
         font-size: 20px;
         color: #b80c4d;
         margin: 4px;
    }
+
     #holderEntryBox #uiEntryHolder #content {
         font-size: 20px;
         color: #b80c4d;
         margin-top: 4px;
         margin-bottom: -40px;
    }
-    footer {
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex: 2;
         text-align: center;
         align-content: center;
-        margin-top: 70px;
-        display: flex;
-   }
-    footer .footerBoxNatLang {
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;      
+    }
+
+    .footerBox{
         display: block;
         text-align: center;
         margin-top: 60px;
         height: 100%;
         border-radius: 40px;
-        width: 100%;
+        width: 380px;
+        margin: 5px;
         background-color: #ebc994;
-   }
-    footer .footerBoxNatLang p {
+    }
+
+    .footerBox p{
         margin: 10px;
-   }
+    }
+
+    input {
+        padding: 5px 20px;
+        line-height: 16px;
+        margin: 10px 0;
+    }
+
+    header {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-bottom: 60px;
+        text-align: center;
+        align-content: center;
+        top: 0;
+        width: 24.4rem;
+        height: 3rem;
+       }
+    
+    .headerBox{
+        display: flex;
+        text-align: center;
+        height: 40px;
+        border-radius: 40px;
+        width: 100%;
+        text-align: center;
+        background-color: #ebc994;
+        align-content: center;
+        top: 0;
+        
+    }
+    
+    #portfolioLink{
+        margin: auto;
+    }
+    
+    ul{
+        margin-left: 10px;
+    }
+    
+    li{
+        margin: 10px;
+    }
+    
+    .menuBtn {
+        background-color: blanchedalmond;
+        border-radius: 40px;
+        color: #B80C4D;
+        width: 80px;
+        text-align: center;
+    }
+    
+    .menuBtn:hover{
+        background-color: yellow;
+    }
 }
 @media (min-width: 400px) and (max-width: 980px) {
     .cardBoardSingl {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        position: relative;
+        min-height: 100vh;
    }
     #weatheJournInputBox {
         margin-top: -30px;
         display: grid;
         grid-area: 1/2/3/3;
    }
-    #weatheJournInputBox #inputBoxTitle {
-        margin-top: 20px;
-        font-size: 30px;
-        color: #b80c4d;
-        font-weight: bold;
-   }
-    #weatheJournInputBox #holderCountryCode {
+
+   #inputBoxTitle {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #b80c4d;
+    font-weight: bold;
+}
+    #holderCountryCode {
         display: flex;
         flex-direction: column;
         margin: auto;
-        grid-area: 4/1/6/2;
-   }
-    #weatheJournInputBox #holderCountryCode #countryCodeTitle {
+        grid-area: 2/1/4/2;
+    }
+    #countryCodeTitle {
         font-size: 20px;
         margin-top: -5px;
         margin-bottom: 10px;
-   }
-    #weatheJournInputBox #holderCountryCode #countryCode {
+    }
+    #countryCode {
         color: gray;
         border-radius: 40px;
         width: 200px;
         text-align: center;
         margin: auto;
-   }
-    #weatheJournInputBox #holderZip {
+    }
+    #holderZip {
         display: flex;
         flex-direction: column;
         margin: auto;
         grid-area: 8/1/9/2;
-   }
-    #weatheJournInputBox #holderZip #zipTitle {
+    }
+    #zipTitle {
         font-size: 20px;
-   }
+        margin: 0;
+        /* margin-bottom:-30px; */
+    }
     #weatheJournInputBox #holderZip #zipInpBox {
         color: gray;
         border-radius: 40px;
         width: 200px;
         text-align: center;
-   }
+    }
+
     #holderFeelings {
         grid-area: 3/2/5/3;
         margin-top: 35px;
@@ -244,30 +341,94 @@
         margin-top: 4px;
         margin-bottom: -40px;
    }
-    footer {
+   footer{
         text-align: center;
         align-content: center;
-        margin-top: 35px;
         display: flex;
-   }
-    footer .footerBoxNatLang {
+        bottom: 0;
+        width: 100%;
+        height: 3rem;
+    }
+
+    .footerBox{
         display: block;
         text-align: center;
-        margin-top: 120px;
+        margin-top: 60px;
         height: 100%;
         border-radius: 40px;
         width: 100%;
+        margin: 5px;
         background-color: #ebc994;
-   }
-    footer .footerBoxNatLang p {
+    }
+
+    .footerBox p{
         margin: 10px;
-   }
+    }
+
+    input {
+        padding: 5px 20px;
+        line-height: 16px;
+        margin: 10px 0;
+        }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        text-align: center;
+        align-content: center;
+        top: 0;
+        width: 100%;
+        height: 3rem;
+    }
+        
+    .headerBox{
+        display: flex;
+        text-align: center;
+        height: 40px;
+        border-radius: 40px;
+        width: 100%;
+        text-align: center;
+        background-color: #ebc994;
+        align-content: center;
+        top: 0;
+        
+    }
+    
+    #portfolioLink{
+        margin: auto;
+    }
+    
+    ul{
+        margin-left: 10px;
+    }
+    
+    li{
+        margin: 10px;
+    }
+    
+    .menuBtn {
+        background-color: blanchedalmond;
+        border-radius: 40px;
+        color: #B80C4D;
+        width: 80px;
+        text-align: center;
+    }
+    
+    .menuBtn:hover{
+        background-color: yellow;
+    }
+
 }
+
+
 @media (min-width: 981px) {
     .cardBoardSingl {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        position: relative;
+        min-height: 100vh;
    }
     #weatheJournInputBox {
         margin-top: -30px;
@@ -276,38 +437,40 @@
         margin-left: auto;
         margin-right: auto;
    }
-    #weatheJournInputBox #inputBoxTitle {
+    #inputBoxTitle {
         margin-top: 20px;
         font-size: 30px;
         color: #b80c4d;
         font-weight: bold;
    }
-    #weatheJournInputBox #holderCountryCode {
+    #holderCountryCode {
         display: flex;
         flex-direction: column;
         margin: auto;
-        grid-area: 4/1/6/2;
+        grid-area: 2/1/4/2;
    }
-    #weatheJournInputBox #holderCountryCode #countryCodeTitle {
+    #countryCodeTitle {
         font-size: 20px;
         margin-top: -5px;
         margin-bottom: 10px;
    }
-    #weatheJournInputBox #holderCountryCode #countryCode {
+    #countryCode {
         color: gray;
         border-radius: 40px;
         width: 200px;
         text-align: center;
         margin: auto;
    }
-    #weatheJournInputBox #holderZip {
+   #holderZip {
         display: flex;
         flex-direction: column;
         margin: auto;
         grid-area: 8/1/9/2;
    }
-    #weatheJournInputBox #holderZip #zipTitle {
+    #zipTitle {
         font-size: 20px;
+        margin: 0;
+        /* margin-bottom:-30px; */
    }
     #weatheJournInputBox #holderZip #zipInpBox {
         color: gray;
@@ -383,22 +546,93 @@
         margin-top: 4px;
         margin-bottom: -40px;
    }
-    footer {
-        text-align: center;
-        align-content: center;
-        margin-top: 35px;
-        display: flex;
+   
+   input {
+    padding: 5px 20px;
+    line-height: 16px;
+    margin: 10px 0;
+    }
+
+    header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    text-align: center;
+    align-content: center;
+    top: 0;
+    width: 100%;
+    height: 3rem;
    }
-    footer .footerBoxNatLang {
-        display: block;
-        text-align: center;
-        margin-top: 130px;
-        height: 100%;
-        border-radius: 40px;
-        width: 100%;
-        background-color: #ebc994;
-   }
-    footer .footerBoxNatLang p {
-        margin: 10px;
-   }
+
+.headerBox{
+    display: flex;
+    text-align: center;
+    height: 40px;
+    border-radius: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: #ebc994;
+    align-content: center;
+    top: 0;
+    
 }
+
+#portfolioLink{
+    margin: auto;
+}
+
+ul{
+    margin-left: 10px;
+}
+
+li{
+    margin: 10px;
+}
+
+.menuBtn {
+    background-color: blanchedalmond;
+    border-radius: 40px;
+    color: #B80C4D;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.menuBtn:hover{
+    background-color: yellow;
+}
+
+a:link{
+    color: #B80C4D;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #db4f85;  
+}
+
+footer{
+    text-align: center;
+    align-content: center;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.footerBox{
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    height: 100%;
+    border-radius: 40px;
+    width: 100%;
+    margin: 5px;
+    background-color: #ebc994;
+}
+
+.footerBox p{
+    margin: 10px;
+}
+};
+
