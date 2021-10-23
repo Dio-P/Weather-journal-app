@@ -6,7 +6,7 @@ const apiKey = "&appid=929e58a6f009e6103b21f1671763aac4";
 let weatherDataBox= [];
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = (d.getMonth()+1)+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = d.getDate()+'.'+ (d.getMonth()+1) +'.'+ d.getFullYear();
 
 /* the event listener that starts it all */
 document.getElementById("generateBtn").addEventListener("click", giveNewEntry, true);

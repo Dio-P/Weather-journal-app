@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 @media (max-width:399px) {
     
     input {
@@ -170,12 +174,10 @@
         line-height: 16px;
         margin: 10px 0;
     }
-    
 
     header {
         display: flex;
         flex-direction: column;
-        margin-top: -60px;
         margin-bottom: 60px;
         text-align: center;
         align-content: center;
@@ -189,7 +191,7 @@
         border-radius: 40px;
         width: 100%;
         text-align: left;
-        background-color: #ebc994;    
+        background-color: #ebc994;  
     }
    
     ul{
