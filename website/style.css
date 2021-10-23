@@ -213,12 +213,21 @@ body {
         background-color: blanchedalmond;
         border-radius: 40px;
         color: #B80C4D;
-        width: 80px;
+        width: 10rem;
         text-align: center;
     }
     
     .menuBtn:hover{
         background-color: yellow;
+    }
+
+    a:link{
+        color: #B80C4D;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color: #db4f85;  
     }
 }
 @media (min-width: 400px) and (max-width: 980px) {
@@ -411,12 +420,21 @@ body {
         background-color: blanchedalmond;
         border-radius: 40px;
         color: #B80C4D;
-        width: 80px;
+        width: 10rem;
         text-align: center;
     }
     
     .menuBtn:hover{
         background-color: yellow;
+    }
+    
+    a:link{
+        color: #B80C4D;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color: #db4f85;  
     }
 
 }
@@ -593,8 +611,7 @@ li{
     background-color: blanchedalmond;
     border-radius: 40px;
     color: #B80C4D;
-    width: 100px;
-    height: 20px;
+    width: 10rem;
     text-align: center;
 }
 
