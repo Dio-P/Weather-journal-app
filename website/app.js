@@ -9,12 +9,12 @@ let d = new Date();
 let newDate = (d.getMonth()+1)+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 /* the event listener that starts it all */
-document.getElementById("generate").addEventListener("click", giveNewEntry, true);
+document.getElementById("generateBtn").addEventListener("click", giveNewEntry, true);
 
 /*function triggered by pressing the button. This combines all the .then statements*/
 function giveNewEntry(e){
     const newFeelings = document.getElementById("feelings").value;
-    let newZip = document.getElementById("zip").value;
+    let newZip = document.getElementById("zipInpBox").value;
     let newCC = document.getElementById("countryCode").value;
     let zipCode= "zip="+ newZip +",";
     let countryCode= newCC;

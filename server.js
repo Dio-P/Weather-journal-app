@@ -11,7 +11,8 @@ const app = express();
 const port = 3000;
 
 /* Middleware*/
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch");
+// import fetch from "node-fetch"
 const bodyParser = require("body-parser")
 
 //Here we are configuring express to use body-parser as middle-ware.
