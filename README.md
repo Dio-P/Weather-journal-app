@@ -14,4 +14,4 @@ Asynchronous web app that uses Web API and user data to dynamically update the U
     "node-fetch"
     "express"
 ```
-##### It was made by Dio Papadopoulos as part of a Udacity's front end developer course.
+##### #### It was made by [Dio Papadopoulos](https://dio-papa-portfolio-site.herokuapp.com/travellingWeatherApp) as part of the Udacity's "Front End Developer Course".

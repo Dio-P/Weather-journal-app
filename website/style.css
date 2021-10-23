@@ -1,117 +1,404 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+@media (max-width: 399px) {
+    .cardBoardSingl {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+   }
+    #weatheJournInputBox {
+        margin-top: -30px;
+        display: grid;
+        grid-area: 1/1/3/2;
+   }
+    #weatheJournInputBox #inputBoxTitle {
+        margin-top: 20px;
+        font-size: 30px;
+        color: #b80c4d;
+        font-weight: bold;
+   }
+    #weatheJournInputBox #holderCountryCode {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        grid-area: 4/1/6/2;
+   }
+    #weatheJournInputBox #holderCountryCode #countryCodeTitle {
+        font-size: 20px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+   }
+    #weatheJournInputBox #holderCountryCode #countryCode {
+        color: gray;
+        border-radius: 40px;
+        width: 200px;
+        text-align: center;
+        margin: auto;
+   }
+    #weatheJournInputBox #holderZip {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        grid-area: 8/1/9/2;
+   }
+    #weatheJournInputBox #holderZip #zipTitle {
+        font-size: 20px;
+   }
+    #weatheJournInputBox #holderZip #zipInpBox {
+        color: gray;
+        border-radius: 40px;
+        width: 200px;
+        text-align: center;
+   }
+    #holderFeelings {
+        grid-area: 3/1/5/2;
+   }
+    #holderFeelings #feelingsTitle {
+        font-size: 20px;
+        margin-top: 5px;
+   }
+    #holderFeelings #feelings {
+        grid-area: 3/1/7/2;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+   }
+    #holderFeelings .myInput {
+        color: gray;
+        border-radius: 40px;
+   }
+    #holderFeelings #generateBtn {
+        width: 160px;
+        height: 30px;
+        grid-area: 8/1/9/1;
+        margin: auto;
+        color: #b80c4d;
+        border-radius: 40px;
+        background-color: blanchedalmond;
+        align-content: center;
+   }
+    #holderFeelings #generateBtn:hover {
+        background-color: yellow;
+   }
+    #holderEntryBox {
+        grid-area: 5/1/7/2;
+        font-size: 21px;
+        margin-top: 30px;
+   }
+    #holderEntryBox #holderEntryBoxTitle {
+        margin-top: 5px;
+   }
+    #holderEntryBox #uiEntryHolder {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -40px;
+        grid-area: 2/1/10/2;
+        font-size: 20px;
+        margin-left: 15px;
+   }
+    #holderEntryBox #uiEntryHolder #date {
+        font-size: 20px;
+        color: #b80c4d;
+        margin: 4px;
+   }
+    #holderEntryBox #uiEntryHolder #temp {
+        font-size: 20px;
+        color: #b80c4d;
+        margin: 4px;
+   }
+    #holderEntryBox #uiEntryHolder #content {
+        font-size: 20px;
+        color: #b80c4d;
+        margin-top: 4px;
+        margin-bottom: -40px;
+   }
+    footer {
+        text-align: center;
+        align-content: center;
+        margin-top: 70px;
+        display: flex;
+   }
+    footer .footerBoxNatLang {
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+        height: 100%;
+        border-radius: 40px;
+        width: 100%;
+        background-color: #ebc994;
+   }
+    footer .footerBoxNatLang p {
+        margin: 10px;
+   }
 }
-
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+@media (min-width: 400px) and (max-width: 980px) {
+    .cardBoardSingl {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+   }
+    #weatheJournInputBox {
+        margin-top: -30px;
+        display: grid;
+        grid-area: 1/2/3/3;
+   }
+    #weatheJournInputBox #inputBoxTitle {
+        margin-top: 20px;
+        font-size: 30px;
+        color: #b80c4d;
+        font-weight: bold;
+   }
+    #weatheJournInputBox #holderCountryCode {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        grid-area: 4/1/6/2;
+   }
+    #weatheJournInputBox #holderCountryCode #countryCodeTitle {
+        font-size: 20px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+   }
+    #weatheJournInputBox #holderCountryCode #countryCode {
+        color: gray;
+        border-radius: 40px;
+        width: 200px;
+        text-align: center;
+        margin: auto;
+   }
+    #weatheJournInputBox #holderZip {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        grid-area: 8/1/9/2;
+   }
+    #weatheJournInputBox #holderZip #zipTitle {
+        font-size: 20px;
+   }
+    #weatheJournInputBox #holderZip #zipInpBox {
+        color: gray;
+        border-radius: 40px;
+        width: 200px;
+        text-align: center;
+   }
+    #holderFeelings {
+        grid-area: 3/2/5/3;
+        margin-top: 35px;
+   }
+    #holderFeelings #feelingsTitle {
+        font-size: 20px;
+        margin-top: 5px;
+   }
+    #holderFeelings #feelings {
+        grid-area: 3/1/7/2;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+   }
+    #holderFeelings .myInput {
+        color: gray;
+        border-radius: 40px;
+   }
+    #holderFeelings #generateBtn {
+        width: 160px;
+        height: 30px;
+        grid-area: 8/1/9/1;
+        margin: auto;
+        color: #b80c4d;
+        border-radius: 40px;
+        background-color: blanchedalmond;
+        align-content: center;
+   }
+    #holderFeelings #generateBtn:hover {
+        background-color: yellow;
+   }
+    #holderEntryBox {
+        grid-area: 5/2/7/3;
+        font-size: 21px;
+        margin-top: 105px;
+   }
+    #holderEntryBox #holderEntryBoxTitle {
+        margin-top: 5px;
+   }
+    #holderEntryBox #uiEntryHolder {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -40px;
+        grid-area: 2/1/10/2;
+        font-size: 20px;
+        margin-left: 15px;
+   }
+    #holderEntryBox #uiEntryHolder #date {
+        font-size: 20px;
+        color: #b80c4d;
+        margin: 4px;
+   }
+    #holderEntryBox #uiEntryHolder #temp {
+        font-size: 20px;
+        color: #b80c4d;
+        margin: 4px;
+   }
+    #holderEntryBox #uiEntryHolder #content {
+        font-size: 20px;
+        color: #b80c4d;
+        margin-top: 4px;
+        margin-bottom: -40px;
+   }
+    footer {
+        text-align: center;
+        align-content: center;
+        margin-top: 35px;
+        display: flex;
+   }
+    footer .footerBoxNatLang {
+        display: block;
+        text-align: center;
+        margin-top: 120px;
+        height: 100%;
+        border-radius: 40px;
+        width: 100%;
+        background-color: #ebc994;
+   }
+    footer .footerBoxNatLang p {
+        margin: 10px;
+   }
 }
-
-/* id to add an extra box for country code*/
-#holder-for-zip-and-cc{
-    display: grid;
+@media (min-width: 981px) {
+    .cardBoardSingl {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+   }
+    #weatheJournInputBox {
+        margin-top: -30px;
+        display: grid;
+        grid-area: 1/2/3/3;
+        margin-left: auto;
+        margin-right: auto;
+   }
+    #weatheJournInputBox #inputBoxTitle {
+        margin-top: 20px;
+        font-size: 30px;
+        color: #b80c4d;
+        font-weight: bold;
+   }
+    #weatheJournInputBox #holderCountryCode {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        grid-area: 4/1/6/2;
+   }
+    #weatheJournInputBox #holderCountryCode #countryCodeTitle {
+        font-size: 20px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+   }
+    #weatheJournInputBox #holderCountryCode #countryCode {
+        color: gray;
+        border-radius: 40px;
+        width: 200px;
+        text-align: center;
+        margin: auto;
+   }
+    #weatheJournInputBox #holderZip {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        grid-area: 8/1/9/2;
+   }
+    #weatheJournInputBox #holderZip #zipTitle {
+        font-size: 20px;
+   }
+    #weatheJournInputBox #holderZip #zipInpBox {
+        color: gray;
+        border-radius: 40px;
+        width: 200px;
+        text-align: center;
+   }
+    #holderFeelings {
+        grid-area: 3/2/5/3;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+   }
+    #holderFeelings #feelingsTitle {
+        font-size: 20px;
+        margin-top: 5px;
+   }
+    #holderFeelings #feelings {
+        grid-area: 3/1/7/2;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+   }
+    #holderFeelings .myInput {
+        color: gray;
+        border-radius: 40px;
+   }
+    #holderFeelings #generateBtn {
+        width: 160px;
+        height: 30px;
+        grid-area: 8/1/9/1;
+        margin: auto;
+        color: #b80c4d;
+        border-radius: 40px;
+        background-color: blanchedalmond;
+        align-content: center;
+   }
+    #holderFeelings #generateBtn:hover {
+        background-color: yellow;
+   }
+    #holderEntryBox {
+        grid-area: 5/2/7/3;
+        font-size: 21px;
+        margin-top: 105px;
+        margin-left: auto;
+        margin-right: auto;
+   }
+    #holderEntryBox #holderEntryBoxTitle {
+        margin-top: 5px;
+   }
+    #holderEntryBox #uiEntryHolder {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -40px;
+        grid-area: 2/1/10/2;
+        font-size: 20px;
+        margin-left: 15px;
+   }
+    #holderEntryBox #uiEntryHolder #date {
+        font-size: 20px;
+        color: #b80c4d;
+        margin: 4px;
+   }
+    #holderEntryBox #uiEntryHolder #temp {
+        font-size: 20px;
+        color: #b80c4d;
+        margin: 4px;
+   }
+    #holderEntryBox #uiEntryHolder #content {
+        font-size: 20px;
+        color: #b80c4d;
+        margin-top: 4px;
+        margin-bottom: -40px;
+   }
+    footer {
+        text-align: center;
+        align-content: center;
+        margin-top: 35px;
+        display: flex;
+   }
+    footer .footerBoxNatLang {
+        display: block;
+        text-align: center;
+        margin-top: 130px;
+        height: 100%;
+        border-radius: 40px;
+        width: 100%;
+        background-color: #ebc994;
+   }
+    footer .footerBoxNatLang p {
+        margin: 10px;
+   }
 }
-
-
-.holder{
-
-}
-
-.entry{
-    background: rgba(59, 74, 107, .4);
-}
-
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
-}
-
-/*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
-}
-
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-}
-
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
-}
-
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-/* Reset style for HTML element on active to have no border*/
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
-/* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
